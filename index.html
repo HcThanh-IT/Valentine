@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="./img/VLT1.png"/>
+    <title>Valentine</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 10px;
+        }
+        body{
+            margin: auto;
+            background: no-repeat url(./img/background.jpg);
+            background-size: cover;
+        }
+        img{
+            width: 100%;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            margin: auto;
+        }
+
+        .home{
+            margin: auto;
+        }
+        .home .title{
+            text-align: center;
+            font-size: 5rem;
+            color: #000;
+            margin: 7rem 0 5rem 0;
+        }
+        .home{
+            text-align: center;
+        }
+        .sign_in{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sign_in form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+        }
+        form .btn{
+            position: relative;
+            display: flex;
+            height: 5rem;
+        }
+        form .password{
+            width: 50%;
+            background-color:#fff;
+            align-items: center;
+        }
+        form .submit{
+            width: 30%;
+            background-color: #000;
+            border: 0.1rem solid #fff;
+        }
+        .sign_in form input[type="text"]{
+            width: 100%;
+            height: 80%;
+            margin: 0 2rem;
+            border: none;
+            font-size: 2.5rem;
+        }
+        .sign_in form input[type="submit"]{
+            width: 100%;
+            height: 100%;
+            margin: 0 2rem;
+            background-color: #000;
+            border: none;
+        }
+        .btn span .fa-heart{
+            font-size: 4rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: #fff;
+        }
+        .submit:hover .fa-heart{
+            color: red;
+        }
+        audio{
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay controls>
+        <source src="./music.mp3" type="audio/mpeg">
+      Trình duyệt của bạn không hỗ trợ HTML5
+      </audio>
+    <div class="container">
+        <div class="home">
+        <div class="title">Enter "Love Code" <br> to see love from that person</div>
+        <div class="sign_in">
+          <form id="login" action="">
+            <div class="btn password">
+                <input id="password" type="text">
+            </div>
+            <div class="btn submit">
+                <a href="">
+                    <input type="submit" value="">
+                    <span><i class="fa fa-heart" aria-hidden="true" onclick="LG()"></i></span>
+                </a>
+            </div>
+          </form>
+        </div>
+    </div>
+    </div>
+    <script>
+        var a ='LKQ';
+        var b ='BAONGOCCUTE';
+        var c ='120318';
+        var d ='140322';
+        var inputpassword = document.getElementById('password')
+        var formlg=document.getElementById('login')
+
+        if (login.attachEvent)
+    {
+        login.attachEvent('Đăng nhập', LG);
+    }
+    else{
+        login.addEventListener('Đăng nhập', LG);
+    }
+        function LG(){
+            var password = inputpassword.value;
+            if(password == a){
+                open("./quynh.html")
+            }
+            if(password == b){
+                open("./ngoc.html")
+            }
+            if(password == c){
+                open("./thu.html")
+            }
+            if(password == d){
+                open("./tam.html")
+            }
+        }
+    </script>
+</body>
+</html>
